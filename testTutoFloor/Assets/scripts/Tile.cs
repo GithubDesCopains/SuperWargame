@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Tile : MonoBehaviour
+public abstract class Tile : MonoBehaviour
 {
-    public Vector2 GridPosition = Vector2.zero;
+    public abstract Vector2 GridPosition
+    {
+        get;
+        set;
+    }
 
     // Use this for initialization
     void Start()
